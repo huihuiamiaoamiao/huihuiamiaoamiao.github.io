@@ -166,8 +166,8 @@
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://pinglun2.vercel.app/',
-      region: 'ap-shanghai',
+      envId: 'https://pinglun2-1853739427-qqcom.vercel.app/',
+      region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
       }
@@ -178,8 +178,8 @@
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://pinglun2.vercel.app/',
-      region: 'ap-shanghai',
+      envId: 'https://pinglun2-1853739427-qqcom.vercel.app/',
+      region: '',
       urls: [window.location.pathname],
       includeReply: false
     }).then(function (res) {
